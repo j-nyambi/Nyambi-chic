@@ -1,0 +1,550 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, iniyial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/6f80fb911d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/HOME.css">
+    <link rel="stylesheet" href="css/ALL BRANDS.css">
+    <title>Rich rabbit</title>
+</head>
+<body>
+
+
+    <!-- navigation/ header  Section  -->
+    <header>
+        <div class="nav-bar">
+
+            <a href="HOME PAG3.html" class="logo">Nyambi Chic.</a>
+
+            <div class="navigation">
+                <div class="nav-items">
+                    <i class="nav-close-btn hid ">
+                        x
+                    </i>
+
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button type="submit" id="search-button"><i class="srch fas fa-search"></i></button>
+
+
+                    <div class="dropdown">
+                        <a href="#" class="nav nav-drop ">Explore</a>
+                        <div class="dropdown-content">
+                            <a href="All PRODUCTS.html">All</a>
+                            <a href="MEN page.html">Men</a>
+                            <a href="KIDS.html">Kids</a>
+                            <a href="WOMEN.html">Women</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown ">
+                        <a href="#" class="nav nav-drop ">Account</a>
+                        <div class="dropdown-content">
+                            <a href="BRAND REG IN.html">Register a Brand</a>
+                            <a class="logout" href="LANDING PAGE.html">Logout</a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- navigation menu button on small screen  -->
+            <i class="nav-menu-btn fa-solid fa-compass"></i>
+
+        </div>
+        <!-- scroll indicator container  -->
+        <div class="scroll-indicator-container">
+            <div class="scroll-indicator-bar"></div>
+        </div>
+    </header>
+    <!-----------main------------>
+    <main>
+
+        <div class="container">
+            <!--------------------------------------left---------------------------------------------------------->
+            <div class="left">
+
+                <!--------------------------------------------sidebar----------------------------------->
+                <div class="sidebar">
+                    <a href="HOME PAG3.html" class="sidebar-items">
+                        <span><i class="sb fa-solid fa-house-user"> </i></span> <h3>Home</h3>
+                    </a>
+                    <a href="BRANDS PAGE.html" class="sidebar-items" >
+                        <span><i class="sb fa-solid fa-copyright"></i></span> <h3>Brands</h3>
+                    </a>
+                    <a href="All PRODUCTS.html" class="sidebar-items">
+                        <span><i class="sb fa-solid fa-compass"></i></span> <h3>Explore</h3>
+                    </a>
+                    <a href="#" class="sidebar-items" id="active">
+                        <span><i class="sb fa-regular fa-circle-user"></i></span> <h3>Profile</h3>
+                    </a>
+
+                    <br />
+                    <!-------------------theme ------------>
+                    <button onclick="toggleTheme()">Dark Theme</button>
+
+                </div>
+
+                <hr />
+
+                <!-------------------refine section-------------------------->
+
+                <div class="refine-section">
+                    <i class="fa-solid fa-filter"></i>
+                    <h2>Refine</h2>
+                    <div class="refine">
+
+                        <label for="category-select">Category:</label>
+                        <select id="category-select">
+                            <option value="all">All</option>
+                            <option value="men">Men</option>
+                            <option value="women">Women</option>
+                            <option value="kids">Kids</option>
+                        </select>
+                    </div>
+                    <div class="refine">
+                        <label for="size-select">Size:</label>
+                        <select id="size-select">
+                            <option value="all">All</option>
+                            <option value="xsmall">XSmall</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">XLarge</option>
+                        </select>
+                    </div>
+
+                    <div class="refine">
+                        <label for="color-select">Color:</label>
+                        <select id="color-select">
+                            <option value="all">All</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                        </select>
+                    </div>
+
+                    <div class="refine"><button id="filter-button">Filter</button></div>
+                </div>
+
+                <!-- Placeholder for displaying filtered products -->
+                <div id="filtered-products"></div>
+
+
+
+            </div>
+            <!-------------------------------------------middle----------------------------------------------------->
+
+            <div class="middle">
+
+                <!------------------------products-------------------------->
+
+                <div class="brands-h1">
+                    <a href="#" class="">
+                        <h1> checkout <span></span> </h1>
+                    </a>
+                </div>
+
+
+
+
+
+
+                <!----------------------products------------------------------------------------->
+                <div class="bill">
+
+                    <br />
+                    <strong class="bi11 cart-total-title">Total: R <span class="checkout-total"></span></strong>
+                    <br />
+                    <br />
+                    <h3>BILLING ADDRESS</h3>
+                    <form>
+                        <p>Full name</p>
+                        <input class="inputValue" type="text" name="name" placeholder="Enter name" required>
+                        <p>Email</p>
+                        <input class="inputValue" type="email" name="email" placeholder="Enter email" required>
+
+                        <p>Address</p>
+                        <input class="inputValue" type="text" name="address" placeholder="Enter address" required>
+
+                        <p>City</p>
+                        <input class="inputValue" type="text" name="city" placeholder="Enter City">
+                        <div id="zip">
+                            <label>
+                                Provence
+                                <select>
+                                    <option>Choose State..</option>
+                                    <option>Eastern Cape</option>
+                                    <option>Free State</option>
+                                    <option>Gauteng</option>
+                                    <option>KwaZulu-Natal</option>
+                                    <option>Limpopo</option>
+                                    <option>Mpumalanga</option>
+                                    <option>North West</option>
+                                    <option>Northern Cape</option>
+                                    <option>Western Cape</option>
+                                </select>
+                            </label>
+                            <label>
+                                Zip code
+                                <input type="number" name="zip code" placeholder="Zip code">
+                            </label>
+                        </div>
+                    </form>
+
+                    <br />
+                    <hr />
+                    <br />
+
+                    <h2>PAYMENT</h2>
+                    <form>
+
+                        <p>Accepted Card</p> <br>
+                        <p><i class="fa-solid fa-credit-card"></i> VISA </p>
+                        <p><i class="fa-solid fa-credit-card"></i>MASTERCARD</p>
+                        <br><br>
+
+                        <p>Credit card number</p>
+                        <input class="inputValue" type="number" name="cardNumber" placeholder="Enter card number" required>
+
+                        <p>Exp monthr</p>
+                        <input class="inputValue" type="month" name="" placeholder="Enter Month...  mm" required>
+                        <div id="zip">
+                            <label>
+                                Exp year
+                                <select>
+                                    <option>Choose Year..</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                    <option>2028</option>
+                                    <option>2029</option>
+                                    <option>2030</option>
+                                </select>
+                            </label>
+                            <label>
+                                CVV
+                                <input type="number" name="cvc" placeholder="CVV" required>
+                            </label>
+                        </div>
+                    </form>
+                    <input id="payy" type="submit" name="" value="Proceed to Checkout">
+
+
+                </div>
+
+            </div>
+            <!-------------------------------------right-=---------------------------------->
+
+            <div class="right">
+
+                <!-------------------------------------right-=---------------------------------->
+
+                <div class="right">
+
+                    <!----------- profile--------------------------------------- -->
+
+                    <div class="profile-sec" id="profile-sec">
+                        <div class="pro">
+                            <i class=" fa-regular fa-circle-user"></i>
+                            <h2>Profile</h2>
+                        </div>
+                        <!-- Create a profile card with a circular image -->
+                        <div class="profile">
+
+                            <div class="profile-pic">
+                                <img src="logo1.png">
+                            </div>
+                            <div class="username">
+                                <h4>@juice</h4>
+                            </div>
+
+                        </div>
+                        <!-- Create a button to change the profile picture -->
+                        <button class="pic-button" onclick="changePicture()">Change Picture</button>
+
+
+                        <!-- Create a list of tabs for cart, likes, and orders -->
+                        <div class="right-bar">
+
+                            <a href="#" class="right-bar-items">
+                                <span><i class="fa-solid fa-heart"></i></span>My Likes
+                            </a>
+                            <a href="#" class="right-bar-items">
+                                <span><i class="fa-solid fa-clipboard"></i></span> My orders
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                    <br />   <hr />
+
+                    <!----------------------------------cart---------------------------->
+                    <div class="cart-container">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <h2> CART</h2>
+                        <div class="cart-row">
+                            <span class="productName cart-header cart-column">ITEM</span>
+                            <span class="productName cart-header cart-column"> ~.~</span>
+                            <span class="priceValue cart-header cart-column">PRICE</span>
+                        </div>
+                        <div class="ck-items">
+                            <!-- Cart items will be  added here -->
+
+
+                        </div>
+                        <div class="cart-total">
+
+                        </div>
+                    </div>
+
+                    <br />   <hr />
+
+                </div>
+
+
+
+
+            </div>
+            </div>
+
+            <hr />
+
+            <!-- footer -->
+
+            <div class="col s12" id="logo2">
+                <img class="logo2" src="logo1.png" alt="logo" />
+            </div>
+
+            <footer>
+                <div class="container11">
+
+                    <div class="row">
+                        <div class="col s12" id="footerStyle1">
+                            <h3>About Us</h3>
+                            <p>
+                                We are an online clothing retail shop that aims to provide a convenient and diverse shopping experience for fashion-conscious individuals aged 16 and above.
+                                Our platform serves as a one-stop-shop for customers to discover and purchase clothes from various local brands,
+                                saving them time and effort. We believe in supporting and promoting small brands, filling the market gap left behind by larger corporations.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="footrow">
+                        <div class="col s12 m3" id="footerStyle2">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><i class="fa-solid fa-house-user"></i><a href="HOME PAG3.html">Home</a></li>
+                                <li>
+                                    <i class="fa-regular fa-circle-user"></i>
+                                    <a href="#profile" onclick="document.getElementByClassName('profile-sec').scrollIntoView();">Profile </a>
+                                </li>
+                                <li><i class=" fa-solid fa-book"></i><a href="BRAND REG IN.html">Register your brand </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col s12 m3" id="footerStyle3">
+                            <h3>Contact Us</h3>
+                            <ul>
+
+                                <li><i class="fa-solid fa-phone"></i><a href="tel(012)-320-4453">(012)-320-4453</a></li>
+                                <li><i class="fa-solid fa-envelope"></i><a href="mailto:nyambichic1@gmail.com">nyambichic1@gmail.com</a></li>
+                                <li><i class="fa-solid fa-book"></i><a href="#">Contact Us Form</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col s12 m3" id="footerStyle4">
+                            <h3>Follow Us</h3>
+                            <ul>
+
+                                <li><i class="fa-brands fa-facebook"></i><a href="https://web.facebook.com/events/search/?q=Shopping&sde=AbrQ9KopLfqYT7heXVVCxznkZYxRr9hU1JA4cdLbJhjgs56yyeHW3e833A9dGP1WlEHOyagjWyFL9Y79gw-Ko1iVuJCILVkpVsHkmSbBFb3SEA&filters=eyJmaWx0ZXJfZXZlbnRzX2NhdGVnb3J5OjAiOiJ7XCJuYW1lXCI6XCJmaWx0ZXJfZXZlbnRzX2NhdGVnb3J5XCIsXCJhcmdzXCI6XCI3NjM3NTM3MjA2NDMzNTZcIn0ifQ%3D%3D">Facebook</a></li>
+                                <li><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/p/CqWHZbit0GM/">Instagram</a></li>
+                                <li><i class="fa-brands fa-twitter"></i><a href="https://twitter.com/Twitter">Twitter</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p class="pfot "> Privacy Policy | Cookie Policy | Vulnerability Policy | Terms and Conditions  </p>
+                    <p class="pfot2 ">  @2023 copyright JR </p>
+
+                </div>
+
+            </footer>
+
+            <script>
+                //Javacript for the scroll indicator bar
+                window.addEventListener("scroll", () => {
+                    const indicatorBar = document.querySelector(".scroll-indicator-bar");
+
+                    const pageScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                    const scrollValue = (pageScroll / height) * 100;
+
+                    indicatorBar.style.width = scrollValue + "%";
+                });
+
+                //Responsive navigation menu toggle
+                const menuBtn = document.querySelector(".nav-menu-btn");
+                const closeBtn = document.querySelector(".nav-close-btn");
+                const navigation = document.querySelector(".navigation");
+
+                menuBtn.addEventListener("click", () => {
+                    navigation.classList.add("active");
+                });
+
+                closeBtn.addEventListener("click", () => {
+                    navigation.classList.remove("active");
+                });
+            </script>
+
+            <!-- Add some JavaScript code to change the profile picture -->
+            <script>
+                function changePicture() {
+                    // Get the image element
+                    var img = document.querySelector("img");
+                    // Prompt the user to enter a new image URL
+                    var url = prompt("Enter a new image URL:");
+                    // Set the image source to the new URL
+                    img.src = url;
+                }
+            </script>
+
+            <script>
+                function toggleTheme() {
+                    const body = document.body;
+
+                    // Toggle the "dark-theme" class on the body element
+                    body.classList.toggle("dark-theme");
+
+                    // Save the current theme preference in local storage
+                    const currentTheme = body.classList.contains("dark-theme") ? "dark" : "light";
+                    localStorage.setItem("theme", currentTheme);
+                }
+
+                // Check the user's preferred theme from local storage
+                const preferredTheme = localStorage.getItem("theme");
+                if (preferredTheme === "dark") {
+                    // If the user prefers dark theme, set it initially
+                    document.body.classList.add("dark-theme");
+                }
+
+            </script>
+
+
+            <script>
+
+                // Retrieve the cart items from localStorage on the checkout page
+                const ckItems = document.querySelector(".ck-items");
+                const cartItemsArray = JSON.parse(localStorage.getItem("cartItems"));
+                cartItemsArray.forEach(function (item) {
+                    const ckItemHTML = `
+                                     <div class="item2">
+                                      <img src="${item.image}" alt="">
+                                      <span  class="itemN">${item.name}</span>
+                                      <span class="itemP">${item.price}</span>
+
+                                    </div>
+                                  `;
+                    ckItems.innerHTML += ckItemHTML;
+                });
+
+
+
+                const checkoutTotalDiv = document.querySelector(".checkout-total");
+
+                // Get all the prices from the div with class 'item2'
+                const prices = document.querySelectorAll(".item2 .itemP");
+
+                // Initialize the total price to 0
+                let totalPrice = 0;
+
+                // Loop through the prices and add them to the total price
+                for (const price of prices) {
+                    totalPrice += parseFloat(price.textContent);
+                }
+
+                // Set the checkout total to the total price
+                checkoutTotalDiv.textContent = totalPrice;
+
+
+
+
+
+            </script>
+
+            <script>
+                const payyButton = document.getElementById("payy");
+
+                payyButton.addEventListener("click", function () {
+                    // Get all the required values from the form
+                    const requiredValues = [
+                        "name",
+                        "email",
+                        "address",
+                        "cardNumber",
+                        "expirationDate",
+                        "cvc"
+                    ];
+
+                    // Initialize an error flag to false
+                    let isValid = true;
+
+                    // Loop through the required values and verify that they are all entered
+                    for (const requiredValue of requiredValues) {
+                        const input = document.querySelector(`input[name="${requiredValue}"]`);
+                        if (input.value === "") {
+                            isValid = false;
+                            alert(`Please enter ${requiredValue}`);
+                        }
+                    }
+
+                    // If all required values are entered, verify that they are in the right form/type
+                    if (isValid) {
+                        const cardNumberInput = document.querySelector(`input[name="cardNumber"]`)
+                        const cardNumber = cardNumberInput.value;
+                        if (!/^[0-9]{16}$/.test(cardNumber)) {
+                            isValid = false;
+                            alert(`Please enter a valid credit card number`);
+                        }
+
+                        const expirationDateInput = document.querySelector(`input[name="expirationDate"]`)
+                        const expirationDate = expirationDateInput.value;
+                        if (!/^[0-9]{2}/.test(expirationDate)) {
+                            isValid = false;
+                            alert(`Please enter a valid credit card expiration date`);
+                        }
+
+                        const cvcInput = document.querySelector(`input[name="cvc"]`)
+                        const cvc = cvcInput.value;
+                        if (!/^[0-9]{3}$/.test(cvc)) {
+                            isValid = false;
+                            alert(`Please enter a valid credit card CVC`);
+                        }
+                    }
+
+                    // If all values are valid, play a message saying your payment was successful and redirect you to home
+                    if (isValid) {
+                        alert("Your payment was successful!");
+                        window.location.href = "HOME PAG3.HTML";
+                    }
+                });
+
+            </script>
+
+
+
+</main>
+</body>
+</html>
+

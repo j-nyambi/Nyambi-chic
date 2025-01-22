@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/LOG.css">
+  
+    <title>signin-signup</title>
+</head>
+
+
+<body>
+
+    <!--For current users-->
+    <div class="container">
+        <div class="signin-signup">
+            <form  class="login sign-in-form">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <i class=" fas fa-envelope"></i>
+                    <input class="email" type="email" placeholder="Email" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input class="password" type="password" placeholder="Password" required>
+                </div>
+                <input type="submit" value="Login" class="login btn">
+
+                <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
+                <a href="LANDING PAGE.html">Go back to home </a>
+            </form>
+
+            <!--For new users-->
+            <form class="signup sign-up-form">
+                
+                <h2 class="title">Sign up</h2>
+               
+                <div class="input-field">
+                    <i class=" fas fa-envelope"></i>
+                    <input class="email" type="email" placeholder="email" required>
+                </div>
+                <div class="input-field">
+                    <i class=" fas fa-lock"></i>
+                    <input class="password" type="password" placeholder="password" required>
+                </div>
+                <input type="submit" value="Sign Up" class="btn">
+
+                <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">Sign in</a></p>
+                <a href="LANDING PAGE.html">Go back to home </a>
+            </form>
+        </div>
+
+
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Already have an account?</h3>
+                    <p>Welcome Back! Sign in and Discover Amazing Fashion trends!</p>
+                    <button class="btn" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="" alt="" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>New to Nyambi Chic.?</h3>
+                    <p>Join us and embark on a delightful shopping journey!</p>
+                    <button class="btn" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="" alt="" class="image">
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const sign_in_btn = document.querySelector("#sign-in-btn");
+        const sign_up_btn = document.querySelector("#sign-up-btn");
+        const container = document.querySelector(".container");
+        const sign_in_btn2 = document.querySelector("#sign-in-btn2");
+        const sign_up_btn2 = document.querySelector("#sign-up-btn2");
+        sign_up_btn.addEventListener("click", () => {
+            container.classList.add("sign-up-mode");
+        });
+        sign_in_btn.addEventListener("click", () => {
+            container.classList.remove("sign-up-mode");
+        });
+        sign_up_btn2.addEventListener("click", () => {
+            container.classList.add("sign-up-mode2");
+        });
+        sign_in_btn2.addEventListener("click", () => {
+            container.classList.remove("sign-up-mode2");
+        });
+
+    </script>
+
+
+    <script src="app.js" type="module"></script>
+</body>
+
+
+
+</html>

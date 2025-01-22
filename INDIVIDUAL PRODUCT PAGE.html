@@ -1,0 +1,462 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, iniyial-scale=1.0" />
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/6f80fb911d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/INDIV PRODUCT.css" />
+    <title>product page</title>
+</head>
+<body>
+
+
+
+    <!-- navigation/ header  Section  -->
+    <header>
+        <div class="nav-bar">
+
+            <a href="home page.html" class="logo">Nyambi Chic.</a>
+
+            <div class="navigation">
+                <div class="nav-items">
+                    <i class="nav-close-btn hid ">
+                        x
+                    </i>
+
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button type="submit" id="search-button"><i class="srch fas fa-search"></i></button>
+
+
+                    <div class="dropdown">
+                        <a href="#" class="nav nav-drop ">Explore</a>
+                        <div class="dropdown-content">
+                            <a href="#">All</a>
+                            <a href="#">Men</a>
+                            <a href="#">Kids</a>
+                            <a href="#">Women</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown ">
+                        <a href="#" class="nav nav-drop ">Account</a>
+                        <div class="dropdown-content">
+                            <a href="#">Register a Brand</a>
+                            <a href="#">Logout</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- navigation menu button on small screen  -->
+            <i class="nav-menu-btn fa-solid fa-compass"></i>
+
+        </div>
+        <!-- scroll indicator container  -->
+        <div class="scroll-indicator-container">
+            <div class="scroll-indicator-bar"></div>
+        </div>
+    </header>
+    <!-----------main------------>
+    <main>
+
+        <div class="container">
+            <!--------------------------------------left---------------------------------------------------------->
+            <div class="left">
+
+                <!--------------------------------------------sidebar----------------------------------->
+                <div class="sidebar">
+                    <a href="home page.html" class="sidebar-items" id="active">
+                        <span><i class="sb fa-solid fa-house-user"> </i></span> <h3>Home</h3>
+                    </a>
+                    <a href="brand page.html" class="sidebar-items">
+                        <span><i class="sb fa-solid fa-copyright"></i></span> <h3>Brands</h3>
+                    </a>
+                    <a href="#" class="sidebar-items">
+                        <span><i class="sb fa-solid fa-compass"></i></span> <h3>Explore</h3>
+                    </a>
+                    <a href="#" class="sidebar-items">
+                        <span><i class="sb fa-regular fa-circle-user"></i></span> <h3>Profile</h3>
+                    </a>
+
+                    <br />
+                    <!-------------------theme ------------>
+                    <button onclick="toggleTheme()">Dark Theme</button>
+
+                </div>
+
+                <hr />
+
+                <!-------------------refine section-------------------------->
+
+                <div class="refine-section">
+                    <i class="fa-solid fa-filter"></i>
+                    <h2>Refine</h2>
+                    <div class="refine">
+
+                        <label for="category-select">Category:</label>
+                        <select id="category-select">
+                            <option value="all">All</option>
+                            <option value="men">Men</option>
+                            <option value="women">Women</option>
+                            <option value="kids">Kids</option>
+                        </select>
+                    </div>
+                    <div class="refine">
+                        <label for="size-select">Size:</label>
+                        <select id="size-select">
+                            <option value="all">All</option>
+                            <option value="xsmall">XSmall</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">XLarge</option>
+                        </select>
+                    </div>
+
+                    <div class="refine">
+                        <label for="color-select">Color:</label>
+                        <select id="color-select">
+                            <option value="all">All</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                        </select>
+                    </div>
+
+                    <div class="refine"><button id="filter-button">Filter</button></div>
+                </div>
+
+                <!-- Placeholder for displaying filtered products -->
+                <div id="filtered-products"></div>
+
+
+
+            </div>
+            <!-------------------------------------------middle----------------------------------------------------->
+
+            <div class="middle">
+
+                <!----------------------brands-------------------------------------------------->
+
+                <div class="container9 flex">
+                    <div class="leftp">
+                        <div class="main_image">
+                            <img src="picture1.jpeg" class="slide">
+                        </div>
+                        <div class="option flex">
+                            <img src="picture1.jpeg" onclick="img('picture1.jpeg')">
+                            <img src="picture1.jpeg" onclick="img('picture1.jpeg')">
+                            <img src="picture1.jpeg" onclick="img('picture1.jpeg')">
+                            <img src="picture1.jpeg" onclick="img('picture1.jpeg')">
+                            <img src="picture1.jpeg" onclick="img('picture1.jpeg')">
+                        </div>
+                    </div>
+                    <div class="rightp">
+                        <h1>Beats Solo3 Wireless</h1>
+                        <h4> <small>R</small>1500 </h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        <h5>Color</h5><br />
+                        <h3>Rose Gold</h3>
+                        <div class="color flex1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+                        <h5>Size</h5>
+                        <div class="product-size">
+                            <span>XS</span>
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <h5>Quantity</h5>
+                        <div class="add flex1">
+                            <span>-</span>
+                            <label>1</label>
+                            <span>+</span>
+                        </div>
+
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+
+                <script>
+                    function img(anything) {
+                        document.querySelector('.slide').src = anything;
+                    }
+
+                    function change(change) {
+                        const line = document.querySelector('.home');
+                        line.style.background = change;
+                    }
+                </script>
+
+            </div>
+            <!-------------------------------------right-=---------------------------------->
+
+            <div class="right">
+
+                <!----------- profile--------------------------------------- -->
+
+                <div class="profile-sec" id="profile-sec">
+                    <div class="pro">
+                        <i class=" fa-regular fa-circle-user"></i>
+                        <h2>Profile</h2>
+                    </div>
+                    <!-- Create a profile card with a circular image -->
+                    <div class="profile">
+
+                        <div class="profile-pic">
+                            <img src="picture1.jpeg">
+                        </div>
+                        <div class="username">
+                            <h4>@juice</h4>
+                        </div>
+
+                    </div>
+                    <!-- Create a button to change the profile picture -->
+                    <button class="pic-button" onclick="changePicture()">Change Picture</button>
+
+
+                    <!-- Create a list of tabs for cart, likes, and orders -->
+                    <div class="right-bar">
+
+                        <a href="#" class="right-bar-items">
+                            <span><i class="fa-solid fa-heart"></i></span>My Likes
+                        </a>
+                        <a href="#" class="right-bar-items">
+                            <span><i class="fa-solid fa-clipboard"></i></span> My orders
+                        </a>
+                    </div>
+                </div>
+
+                <br />   <hr />
+
+                <!----------------------------------cart---------------------------->
+                <div class="cart-container">
+                    <div class="cartt">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <h2>My cart</h2>
+                    </div>
+                    <div class="cart-items">
+                        <!-- Cart items will be  added here -->
+                    </div>
+                    <div class="cart-total">
+                        Total: R<span id="cart-total">0.00</span>
+                    </div>
+                    <button class="checkout-button">Checkout</button>
+                </div>
+
+                <br />   <hr />
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $(".add-to-cart").on("click", function (e) {
+                        e.preventDefault();
+                        var $product = $(this).closest(".product");
+                        var productName = $product.find(".namePrice h3").text();
+                        var productPrice = parseFloat($product.find(".namePrice span").text().replace("$", ""));
+                        var cartItem = '<div class="cart-item">' +
+                            '<span class="item-name">' + productName + '</span>' +
+                            '<span class="item-quantity">' +
+                            '<button class="quantity-button" data-action="decrease">-</button>' +
+                            '<input type="text" class="item-quantity-input" value="1">' +
+                            '<button class="quantity-button" data-action="increase">+</button>' +
+                            '</span>' +
+                            '<span class="item-price">$' + productPrice.toFixed(2) + '</span>' +
+                            '</div>';
+
+                        $(".cart-items").append(cartItem);
+                        updateCartTotal();
+                    });
+
+                    $(document).on("click", ".quantity-button", function () {
+                        var $quantityInput = $(this).siblings(".item-quantity-input");
+                        var action = $(this).data("action");
+                        var quantity = parseInt($quantityInput.val());
+
+                        if (action === "increase") {
+                            $quantityInput.val(quantity + 1);
+                        } else if (action === "decrease" && quantity > 1) {
+                            $quantityInput.val(quantity - 1);
+                        }
+
+                        updateCartTotal();
+                    });
+
+                    function updateCartTotal() {
+                        var total = 0;
+                        $(".cart-item").each(function () {
+                            var price = parseFloat($(this).find(".item-price").text().replace("$", ""));
+                            var quantity = parseInt($(this).find(".item-quantity-input").val());
+                            total += price * quantity;
+                        });
+
+                        $("#cart-total").text(total.toFixed(2));
+                    }
+                });
+
+            </script>
+
+
+
+
+
+
+
+
+
+            <script>
+                //Javacript for the scroll indicator bar
+                window.addEventListener("scroll", () => {
+                    const indicatorBar = document.querySelector(".scroll-indicator-bar");
+
+                    const pageScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                    const scrollValue = (pageScroll / height) * 100;
+
+                    indicatorBar.style.width = scrollValue + "%";
+                });
+            </script>
+
+
+
+
+            <script>
+
+                //Responsive navigation menu toggle
+                const menuBtn = document.querySelector(".nav-menu-btn");
+                const closeBtn = document.querySelector(".nav-close-btn");
+                const navigation = document.querySelector(".navigation");
+
+                menuBtn.addEventListener("click", () => {
+                    navigation.classList.add("active");
+                });
+
+                closeBtn.addEventListener("click", () => {
+                    navigation.classList.remove("active");
+                });
+            </script>
+
+            <!-- Add some JavaScript code to change the profile picture -->
+            <script>
+                function changePicture() {
+                    // Get the image element
+                    var img = document.querySelector("img");
+                    // Prompt the user to enter a new image URL
+                    var url = prompt("Enter a new image URL:");
+                    // Set the image source to the new URL
+                    img.src = url;
+                }
+            </script>
+
+            <script>
+                function toggleTheme() {
+                    const body = document.body;
+
+                    // Toggle the "dark-theme" class on the body element
+                    body.classList.toggle("dark-theme");
+
+                    // Save the current theme preference in local storage
+                    const currentTheme = body.classList.contains("dark-theme") ? "dark" : "light";
+                    localStorage.setItem("theme", currentTheme);
+                }
+
+                // Check the user's preferred theme from local storage
+                const preferredTheme = localStorage.getItem("theme");
+                if (preferredTheme === "dark") {
+                    // If the user prefers dark theme, set it initially
+                    document.body.classList.add("dark-theme");
+                }
+
+            </script>
+
+
+
+        </div>
+
+        <hr />
+        <!-- footer -->
+        <!--Section: Contact -->
+        <div class="col s12" id="logo2">
+            <img class="logo2" src="logo1.png" alt="logo" />
+        </div>
+
+        <footer>
+            <div class="container11">
+
+                <div class="row">
+                    <div class="col s12" id="footerStyle1">
+                        <h3>About Us</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+
+                    </div>
+
+                </div>
+                <div class="footrow">
+                    <div class="col s12 m3" id="footerStyle2">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="home page.html">Home</a></li>
+                            <li>
+                                <a href="#profile" onclick="document.getElementByClassName('profile-sec').scrollIntoView();">Profile </a>
+                            </li>
+                            <li><a href="#">Register your brand </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col s12 m3" id="footerStyle3">
+                        <h3>Contact Us</h3>
+                        <ul>
+
+                            <li><i class="fa-solid fa-phone"></i><a href="tel(012)-320-4453">(012)-320-4453</a></li>
+                            <li><i class="fa-solid fa-envelope"></i><a href="mailto:nyambichic1@gmail.com">nyambichic1@gmail.com</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col s12 m3" id="footerStyle4">
+                        <h3>Follow Us</h3>
+                        <ul>
+
+                            <li><i class="fa-brands fa-facebook"></i><a href="https://web.facebook.com/events/search/?q=Shopping&sde=AbrQ9KopLfqYT7heXVVCxznkZYxRr9hU1JA4cdLbJhjgs56yyeHW3e833A9dGP1WlEHOyagjWyFL9Y79gw-Ko1iVuJCILVkpVsHkmSbBFb3SEA&filters=eyJmaWx0ZXJfZXZlbnRzX2NhdGVnb3J5OjAiOiJ7XCJuYW1lXCI6XCJmaWx0ZXJfZXZlbnRzX2NhdGVnb3J5XCIsXCJhcmdzXCI6XCI3NjM3NTM3MjA2NDMzNTZcIn0ifQ%3D%3D">Facebook</a></li>
+                            <li><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/p/CqWHZbit0GM/">Instagram</a></li>
+                            <li><i class="fa-brands fa-twitter"></i><a href="https://twitter.com/Twitter">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="pfot "> Privacy Policy | Cookie Policy | Vulnerability Policy | Terms and Conditions  </p>
+                <p class="pfot2 ">  @2023 copyright JR </p>
+
+            </div>
+
+        </footer>
+
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,292 @@
+﻿body
+{
+}
+
+
+
+.middle .indiv-brand {
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+
+.informations-bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #333333;
+    overflow: visible;
+}
+
+
+.middle h1 {
+    text-align: center;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+
+
+.brands-h1 {
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+    .brands-h1 h1 {
+        font-size: 3em;
+        text-transform: uppercase;
+    }
+
+
+/*=====================================brands==================================*/
+/*==========================THIS IS RICH RABBIT======================*/
+/*Brand pages*/
+
+
+.container-brand-RR {
+    position: relative;
+    margin: auto;
+    width: auto;
+    height: 250px;
+    background-image: url('banner1.jpeg');
+    background-size: cover;
+    border-radius: 5px;
+    overflow: visible;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+    .container-brand-RR .profile-brand {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        left: 25px;
+        font-size: 3rem;
+        margin-top: -27%;
+    }
+
+    .container-brand-RR img {
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .container-brand-RR .name {
+        color: #ff6a00;
+        margin-left: 20px;
+    }
+
+
+
+
+
+
+/*=========================ICON======================*/
+
+
+.container-brand-I {
+    position: relative;
+    margin: auto;
+    width: auto;
+    height: 250px;
+    background-image: url('../images/banner3.png');
+    background-size: cover;
+    border-radius: 5px;
+    overflow: visible;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+    .container-brand-I .profile-brand {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        left: 25px;
+        font-size: 3rem;
+        margin-top: -27%;
+    }
+
+    .container-brand-I img {
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .container-brand-I .name {
+        color: #ff6a00;
+        margin-left: 20px;
+    }
+
+
+
+/*==========================MAXHOSA======================*/
+
+
+.container-brand-MX {
+    position: relative;
+    margin: auto;
+    width: auto;
+    height: 250px;
+    background-image: url('../images/bannerMX.png');
+    background-size: cover;
+    border-radius: 5px;
+    overflow: visible;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+    .container-brand-MX .profile-brand {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        left: 25px;
+        font-size: 3rem;
+        margin-top: -27%;
+    }
+
+    .container-brand-MX img {
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .container-brand-MX .name {
+        color: #ff6a00;
+        margin-left: 20px;
+    }
+
+
+
+
+
+
+/*==========================THIS IS EMPIRE======================*/
+
+
+.container-brand-Emp {
+    position: relative;
+    margin: auto;
+    width: auto;
+    height: 250px;
+    background-image: url('../images/banner4.jpeg');
+    background-size: cover;
+    border-radius: 5px;
+    overflow: visible;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+    .container-brand-Emp .profile-brand {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        left: 25px;
+        font-size: 3rem;
+        margin-top: -27%;
+    }
+
+    .container-brand-Emp img {
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .container-brand-Emp .name {
+        color: #ff6a00;
+        margin-left: 20px;
+    }
+
+
+/*==========================EMBEDDED======================*/
+
+
+.container-brand-Emb {
+    position: relative;
+    margin: auto;
+    width: auto;
+    height: 250px;
+    background-image: url('../images/banner7.png');
+    background-size: cover;
+    border-radius: 5px;
+    overflow: visible;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+    .container-brand-Emb .profile-brand {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        left: 25px;
+        font-size: 3rem;
+        margin-top: -27%;
+    }
+
+    .container-brand-Emb img {
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .container-brand-Emb .name {
+        color: #ff6a00;
+        margin-left: 20px;
+    }
+
+
+
+
+/*========================== TSOTETSI=====================*/
+
+
+.container-brand-T {
+    position: relative;
+    margin: auto;
+    width: auto;
+    height: 250px;
+    background-image: url('../images/banner5.jpeg');
+    background-size: cover;
+    border-radius: 5px;
+    overflow: visible;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+    .container-brand-T .profile-brand {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        left: 25px;
+        font-size: 3rem;
+        margin-top: -27%;
+    }
+
+    .container-brand-T img {
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .container-brand-T .name {
+        color: #ff6a00;
+        margin-left: 20px;
+    }
+
+
+

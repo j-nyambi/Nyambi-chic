@@ -1,0 +1,1209 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, iniyial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/6f80fb911d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/HOME.css">
+    <title>home</title>
+</head>
+<body>
+
+
+    <!-- navigation/ header  Section  -->
+    <header>
+        <div class="nav-bar">
+
+            <a href="HOME PAG3.html" class="logo">Nyambi Chic.</a>
+
+            <div class="navigation">
+                <div class="nav-items">
+                    <i class="nav-close-btn hid ">
+                        x
+                    </i>
+
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button type="submit" id="search-button"><i class="srch fas fa-search"></i></button>
+
+
+                    <div class="dropdown">
+                        <a href="#" class="nav nav-drop ">Explore</a>
+                        <div class="dropdown-content">
+                            
+                            <a href="All PRODUCTS.html">All</a>
+                            <a href="MEN page.html">Men</a>
+                            <a href="KIDS.html">Kids</a>
+                            <a href="WOMEN.html">Women</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown ">
+                        <a href="#" class="nav nav-drop ">Account</a>
+                        <div class="dropdown-content">
+                            <a href="BRAND REG IN.html">Register a Brand</a>
+                            <a class="logout" href="LANDING PAGE.html">Logout</a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- navigation menu button on small screen  -->
+            <i class="nav-menu-btn fa-solid fa-compass"></i>
+
+        </div>
+        <!-- scroll indicator container  -->
+        <div class="scroll-indicator-container">
+            <div class="scroll-indicator-bar"></div>
+        </div>
+    </header>
+    <!-----------main------------>
+    <main>
+
+        <div class="container">
+            <!--------------------------------------left---------------------------------------------------------->
+            <div class="left">
+
+                <!--------------------------------------------sidebar----------------------------------->
+                <div class="sidebar">
+                    <a href="HOME PAG3.html" class="sidebar-items" id="active">
+                        <span><i class="sb fa-solid fa-house-user"> </i></span> <h3>Home</h3>
+                    </a>
+                    <a href="BRANDS PAGE.html" class="sidebar-items">
+                        <span><i class="sb fa-solid fa-copyright"></i></span> <h3>Brands</h3>
+                    </a>
+                    <a href="All PRODUCTS.html" class="sidebar-items">
+                        <span><i class="sb fa-solid fa-compass"></i></span> <h3>Explore</h3>
+                    </a>
+                    <a href="#" class="sidebar-items">
+                        <span><i class="sb fa-regular fa-circle-user"></i></span> <h3>Profile</h3>
+                    </a>
+
+                    <br />
+                    <!-------------------theme ------------>
+                    <button onclick="toggleTheme()">Dark Theme</button>
+
+                </div>
+
+                <hr />
+
+                <!-------------------refine section-------------------------->
+
+                <div class="refine-section">
+                    <i class="fa-solid fa-filter"></i>
+                    <h2>Refine</h2>
+                    <div class="refine">
+
+                        <label for="category-select">Category:</label>
+                        <select id="category-select">
+                            <option value="all">All</option>
+                            <option value="men">Men</option>
+                            <option value="women">Women</option>
+                            <option value="kids">Kids</option>
+                        </select>
+                    </div>
+                    <div class="refine">
+                        <label for="size-select">Size:</label>
+                        <select id="size-select">
+                            <option value="all">All</option>
+                            <option value="xsmall">XSmall</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">XLarge</option>
+                        </select>
+                    </div>
+
+                    <div class="refine">
+                        <label for="color-select">Color:</label>
+                        <select id="color-select">
+                            <option value="all">All</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                        </select>
+                    </div>
+
+                    <div class="refine"><button id="filter-button">Filter</button></div>
+                </div>
+
+                <!-- Placeholder for displaying filtered products -->
+                <div id="filtered-products"></div>
+
+
+
+            </div>
+            <!-------------------------------------------middle----------------------------------------------------->
+
+            <div class="middle">
+
+                <!----------------------brands-------------------------------------------------->
+
+                <div class="brands-h1">
+                    <a href="BRANDS PAGE.html" class="">
+                        <h1> Brands <span></span> </h1>
+                    </a>
+                </div>
+
+
+
+
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="images/RR.jpg" alt="RR">
+                        </div>
+                        <p class="name">Rich Rabbit</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="images/icon.png" alt="Icon">
+                        </div>
+                        <p class="name">Icon</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="images/tsotetsi.png" alt="Tsotetsi">
+                        </div>
+                        <p class="name">Tsotetsi</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="images/empire.png" alt="Empire">
+                        </div>
+                        <p class="name">Empire</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="images/photos/MaXhosa-Africa.png" alt="embedded">
+                        </div>
+                        <p class="name">Embedded</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="images/maxhosa.png" alt="maxhosa">
+                        </div>
+                        <p class="name">maXhosa</p>
+                    </div>
+                </div>
+
+
+
+                <br />
+                <br />
+                <br />
+                <!------------------------products-------------------------->
+
+                <div class="brands-h1">
+                    <a href="ALL PRODUCTS.html" class="">
+                        <h1> products <span></span> </h1>
+                    </a>
+                </div>
+
+
+                <!----------------------products------------------------------------------------->
+                <div class="container-products">
+
+
+
+                    <div class="products">
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/safari-removebg-preview.png" alt="product">
+                            </div>
+                            <div class="react">
+                                <a href="#" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="#">   <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">Cream Safari Outfit</h3>
+                                <span>R<span class="priceValue">1399.99</span></span>
+                            </div>
+                            <p class="product-summary">Safari Unisex School Boy Two Piece in cream for simple sophisticated fashion</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/rrts-removebg-preview.png" alt="product">
+                            </div>
+                            <div class="react">
+                                <a href="#" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="#">   <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">Samurai Rabbit White Print Shirt</h3>
+
+                                <span>R<span class="priceValue">249.99</span></span>
+                            </div>
+                            <p class="product-summary">A bold statement of a hand drawn Samurai Rabbit that expresses creativty<br><br>Made in SA. 100% Cotton</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/chitonic-removebg-preview.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="#" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="#">   <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">Chitonic Unisex Outfit</h3>
+
+                                <span>R<span class="priceValue">1399.99</span></span>
+                            </div>
+                            <p class="product-summary">Chitonic Unisex School boy Two Piece that suits any streetwear</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/rrs-removebg-preview.png" alt="product">
+                            </div>
+                            <div class="react">
+                                <a href="#" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="#">   <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">Rich Rabbit White Brand Shirt</h3>
+                                
+                                <span>R<span class="priceValue">179.49</span></span>
+                            </div>
+                            <p class="product-summary">Embrace our brand in comfortability with this understated shirt displaying our unique brand logo<br><br>Made in SA. 100% Cotton</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/sleeve-removebg-preview.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="#" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="#">   <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+
+                                <h3 class="productName">Lacoste Dress</h3>
+                                
+                                <span>R<span class="priceValue">2349.99</span></span>
+                            </div>
+                            <p class="product-summary">Lacoste Long Sleeve Dress in multiple colours for casual chic</p>
+
+                            <div class="bay">
+                                <button> More Info</button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/rrh-removebg-preview.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="#" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="#">   <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">Rich Rabbit Black Branded Bucket Hat</h3>
+                                <span class="priceValue">R99.99</span>
+                            </div>
+                            <p class="product-summary">Look street suave in our stylish bucket hat that suits any streetwear<br><br>Made in SA. 100% Polyester</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/mldr.png" alt="product">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">   <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">Pattern White and Black dress</h3>
+                                <span class="priceValue">R21499.99</span>
+                            </div>
+                            <p class="product-summary">Long pleated dress in monochromatic patterns. 100% silk</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/rrlc-removebg-preview.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="ht fa-solid fa-heart"></i></a>
+                            </div>
+                            <div class="namePrice">
+
+                                <h3 class="productName">3 for 1 Rich Rabbit Sweatpants</h3>
+                                <span class="priceValue">R349.99</span>
+                            </div>
+                            <p class="product-summary">
+                                Buy our discounted 3 in 1 sweatpants for your more active days.
+                                These Sweatpants come in black, white and grey and are suitable as gym clothing and casual wear<br><br>Made in SA. 100% Polyester
+                            </p>
+
+                            <div class="bay">
+                                <button> More Info</button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/icon long-removebg-preview.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="ht fa-solid fa-heart"></i></a>
+                            </div>
+                            <div class="namePrice">
+
+                                <h3 class="productName">Icon Multi-colour Golfer</h3>
+                                <span class="priceValue">R599.99</span>
+                            </div>
+                            <p class="product-summary">Long Sleeve Golfer fit for both street wear and semi-formal outings or active days<br><br>Made in SA. 100% Polyester</p>
+
+                            <div class="bay">
+                                <button> More Info</button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/emb1.png" alt="product">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">   <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">Tricolor Windbreaker</h3>
+                                <span class="priceValue">R599.99</span>
+                            </div>
+                            <p class="product-summary">Break the ice with this colourful and stylish tracksuit windbreaker</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/rr3.png" alt="product">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">   <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">Yellow Rich Rabbit Hoodie</h3>
+                                <span class="priceValue">R219.99</span>
+                            </div>
+                            <p class="product-summary">This hoodie is one our summer friendly hoodie colours. Liven up your fit in this hoodie. Comes with front Pockets<br><br>Made in SA. 100% Polyester</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/iconwhite.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">Icon White Print Shirt</h3>
+                                <span class="priceValue">R349.99</span>
+                            </div>
+                            <p class="product-summary">Agent 47 graphic shirt in white<br><br>Made in SA. 100% Cotton</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/socks.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="ht fa-solid fa-heart"></i></a>
+                            </div>
+                            <div class="namePrice">
+
+                                <h3 class="productName">Empire Flame Socks</h3>
+                                <span class="priceValue">R49.99</span>
+                            </div>
+                            <p class="product-summary">Keep your feet warm with our flame themed socks this winter</p>
+
+                            <div class="bay">
+                                <button> More Info</button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/emb2.png" alt="product">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html"> <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">OLIVE GREEN APP COLLECTION TWO PIECE UNISEX</h3>
+                                <span class="priceValue">R949.49</span>
+                            </div>
+                            <p class="product-summary">Embedded’s Olive Green App collection brings you these stylish two-piece sets to spice up your wardrobe.</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/flame.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="ht fa-solid fa-heart"></i></a>
+                            </div>
+                            <div class="namePrice">
+
+                                <h3 class="productName">2 for 1 Empire Shirts</h3>
+                                <span class="priceValue">R299.99</span>
+                            </div>
+                            <p class="product-summary">Our Special month long deal, buy 2 Flame Empire branded shirts in both white and black solid colours, 100% cotton</p>
+
+                            <div class="bay">
+                                <button> More Info</button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/ma1-removebg-preview.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="ht fa-solid fa-heart"></i></a>
+                            </div>
+                            <div class="namePrice">
+
+                                <h3 class="productName">Pink maXhosa bra</h3>
+                                <span class="priceValue">R7199.99</span>
+                            </div>
+                            <p class="product-summary">Purchase our runway collection bra with cultural print in pink made from high quality spandex & silk</p>
+
+                            <div class="bay">
+                                <button> More Info</button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/rr4.png" alt="product">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html"> <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">Rich Rabbit Trucker Hat</h3>
+                                <span class="priceValue">R129.49</span>
+                            </div>
+                            <p class="product-summary">Shade your face from the hot sumer sun with our Rich Rabbit branded Trucker Hat<br><br>Made in SA. 100% Polyester</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/rr2.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">Red Rich Rabbit Hoodie</h3>
+                                <span class="priceValue">R219.99</span>
+                            </div>
+                            <p class="product-summary">Stand out in our red hot hoodie. Be fashionably lit. Comes with front Pockets<br><br>Made in SA. 100% Polyester</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/mesh-removebg-preview.png" alt="product">
+                            </div>
+                            <div class="react">
+                                <a href="#" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="#">   <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">Tunnel Mesh Dress</h3>
+                                <span>R <span class="priceValue"> 1279</span></span>
+                            </div>
+                            <p class="product-summary">Tunnel Mesh Dress multi-colour patterned shirt brand made</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/mldr42.png" alt="product">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html"> <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">Red maXhosa designer dress</h3>
+                                <span class="priceValue">R27999.49</span>
+                            </div>
+                            <p class="product-summary">Long pleated dress with detachable sleeves all made from 100% silk</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/emps.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">White Empire Flame Tee</h3>
+                                <span class="priceValue">R199.99</span>
+                            </div>
+                            <p class="product-summary">Buy our hot new 100% cotton Empire branded shirt made in SA</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/iconblack.png" alt="product">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html"> <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">Icon Black Logo Branded Shirt</h3>
+                                <span class="priceValue">R379.49</span>
+                            </div>
+                            <p class="product-summary">Stay casual and represent our local brand in this solid black shirt<br><br>Made in SA. 100% Cotton</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/empoutfit.jpg" alt="product">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html"> <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">Grey Two Piece Outfit</h3>
+                                <span class="priceValue">R559.49</span>
+                            </div>
+                            <p class="product-summary">Be unique in this designer two piece outfit for upper class casual wear made locally out of 100% Silk</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/icondress.png" alt="product">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">   <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">Icon Cream Dress</h3>
+                                <span class="priceValue">R1999.99</span>
+                            </div>
+                            <p class="product-summary">Love is not dead in this cut out dress<br><br>Made in SA. 100% Cotton</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/emb3.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">EMB PINK TP SZN</h3>
+                                <span class="priceValue">R999.99</span>
+                            </div>
+                            <p class="product-summary">Embedded’s Two-Piece SZN collection brings you this complete pink two-piece outfit.</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/emp.png" alt="product">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">   <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">Summer Tropical Empire shirt</h3>
+                                <span class="priceValue">R249.99</span>
+                            </div>
+                            <p class="product-summary">Take this Orange and white shirt and be the most well dressed on your Baecation</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/mshrt.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="ht fa-solid fa-heart"></i> </a>
+                            </div>
+                            <div class="namePrice">
+                                <h3 class="productName">Blended Cultural Jacket</h3>
+                                <span class="priceValue">R7899.99</span>
+                            </div>
+                            <p class="product-summary">100% Silk multi-colour Jacket from our runway collection</p>
+
+                            <div class="bay">
+                                <button> More Info </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/emb4.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="ht fa-solid fa-heart"></i></a>
+                            </div>
+                            <div class="namePrice">
+
+                                <h3 class="productName">EMB BLACK TP SZN</h3>
+                                <span class="priceValue">R749.99</span>
+                            </div>
+                            <p class="product-summary">Embedded’s Two-Piece SZN collection brings you this complete black two-piece outfit.</p>
+
+                            <div class="bay">
+                                <button> More Info</button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/black.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="ht fa-solid fa-heart"></i></a>
+                            </div>
+                            <div class="namePrice">
+
+                                <h3 class="productName">Black maXhosa branded shirt</h3>
+                                <span class="priceValue">R5799.99</span>
+                            </div>
+                            <p class="product-summary">Buy our velvet shirt branded with our prestigious logo</p>
+
+                            <div class="bay">
+                                <button> More Info</button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/EMBEDDED-STUDIO-SHOOT-69-450x676-removebg-preview.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="ht fa-solid fa-heart"></i></a>
+                            </div>
+                            <div class="namePrice">
+
+                                <h3 class="productName">EMB BRW TP SZN (Black Red White)</h3>
+                                <span class="priceValue">R1,000.00</span>
+                            </div>
+                            <p class="product-summary">Embedded’s Two-Piece SZN collection brings you this complete tricolor two-piece outfit.</p>
+
+                            <div class="bay">
+                                <button> More Info</button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/rr5.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="ht fa-solid fa-heart"></i></a>
+                            </div>
+                            <div class="namePrice">
+
+                                <h3 class="productName">Abstract Printed Rich Rabbit White Shirt</h3>
+                                <span class="priceValue">R149.99</span>
+                            </div>
+                            <p class="product-summary">Be different and wear our AI generated printed art shirt<br><br>Made in SA. 100% Cotton</p>
+
+                            <div class="bay">
+                                <button> More Info</button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/EMBEDDED-STUDIO-SHOOT-128-450x676-removebg-preview.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="ht fa-solid fa-heart"></i></a>
+                            </div>
+                            <div class="namePrice">
+
+                                <h3 class="productName">White Crop EMB Puffer</h3>
+                                <span class="priceValue">R699.99</span>
+                            </div>
+                            <p class="product-summary">Embedded’s Crop Puffer collection brings you this white cropped puffer jacket to top off your outfit with.</p>
+
+                            <div class="bay">
+                                <button> More Info</button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/rr1.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="ht fa-solid fa-heart"></i></a>
+                            </div>
+                            <div class="namePrice">
+
+                                <h3 class="productName">4 in 1 Signed Rich Rabbit Shirts</h3>
+                                <span class="priceValue">R349.99</span>
+                            </div>
+                            <p class="product-summary">Enjoy our Owner signed Branded shirts in various colours for multiple occasions<br><br>Made in SA. 100% Cotton</p>
+
+                            <div class="bay">
+                                <button> More Info</button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="image">
+                                <img src="images/ma2-removebg-preview.png" alt="">
+                            </div>
+                            <div class="react">
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html" class="addToCart">  <i class="carti fa-solid fa-cart-shopping"></i> </a>
+                                <a href="file:///C:/Users/USER/Desktop/Nyambi%20chic/cart%20page.html">  <i class="ht fa-solid fa-heart"></i></a>
+                            </div>
+                            <div class="namePrice">
+
+                                <h3 class="productName">Pink Patterned Cultural skirt</h3>
+                                <span class="priceValue">R10599.99</span>
+                            </div>
+                            <p class="product-summary">A dress fit for Xhosa Royalty, impossible to find anywhere else at this quality in 95% knitted Silk & 5% spandex</p>
+
+                            <div class="bay">
+                                <button> More Info</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="load-more"> load more </div>
+
+            </div>
+            <!-------------------------------------right-=---------------------------------->
+
+            <div class="right">
+
+                <!----------- profile--------------------------------------- -->
+
+                <div class="profile-sec" id="profile-sec">
+                    <div class="pro">
+                        <i class=" fa-regular fa-circle-user"></i>
+                        <h2>Profile</h2>
+                    </div>
+                    <!-- Create a profile card with a circular image -->
+                    <div class="profile">
+
+                        <div class="profile-pic">
+                            <img src="logo1.png">
+                        </div>
+                        <div class="username">
+                            <h4>@juice</h4>
+                        </div>
+
+                    </div>
+                    <!-- Create a button to change the profile picture -->
+                    <button class="pic-button" onclick="changePicture()">Change Picture</button>
+
+
+                    <!-- Create a list of tabs for cart, likes, and orders -->
+                    <div class="right-bar">
+
+                        <a href="#" class="right-bar-items">
+                            <span><i class="fa-solid fa-heart"></i></span>My Likes
+                        </a>
+                        <a href="#" class="right-bar-items">
+                            <span><i class="fa-solid fa-clipboard"></i></span> My orders
+                        </a>
+                    </div>
+                </div>
+
+                <br />   <hr />
+
+                <!----------------------------------cart---------------------------->
+                <div class="cart-container">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h2>My cart</h2>
+                    <div class="cart-row">
+                        <span class="productName cart-header cart-column">ITEM</span>
+                        <span class="productName cart-header cart-column"> ~.~</span>
+                        <span class="priceValue cart-header cart-column">PRICE</span>
+                    </div>
+                    <div class="cart-items">
+                        <!-- Cart items will be  added here -->
+                        <div id="empty-cart-message">
+                            <p>Cart is empty.</p>
+                        </div>
+
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Total: R</strong>
+                        <span id="cart-total"></span>
+                    </div>
+                    <button class="checkout-button btn-purchase" type="button">Checkout</button>
+                </div>
+
+                <br />   <hr />
+
+            </div>
+
+
+
+
+
+        </div>
+
+        <hr />
+
+
+        <!-- footer -->
+
+        <div class="col s12" id="logo2">
+            <img class="logo2" src="logo1.png" alt="logo" />
+        </div>
+
+        <footer>
+            <div class="container11">
+
+                <div class="row">
+                    <div class="col s12" id="footerStyle1">
+                        <h3>About Us</h3>
+                        <p>
+                            We are an online clothing retail shop that aims to provide a convenient and diverse shopping experience for fashion-conscious individuals aged 16 and above.
+                            Our platform serves as a one-stop-shop for customers to discover and purchase clothes from various local brands,
+                            saving them time and effort. We believe in supporting and promoting small brands, filling the market gap left behind by larger corporations.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="footrow">
+                    <div class="col s12 m3" id="footerStyle2">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-house-user"></i><a href="HOME PAG3.html">Home</a></li>
+                            <li>
+                                <i class="fa-regular fa-circle-user"></i>
+                                <a href="#profile" onclick="document.getElementByClassName('profile-sec').scrollIntoView();">Profile </a>
+                            </li>
+                            <li><i class=" fa-solid fa-book"></i><a href="BRAND REG IN.html">Register your brand </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col s12 m3" id="footerStyle3">
+                        <h3>Contact Us</h3>
+                        <ul>
+
+                            <li><i class="fa-solid fa-phone"></i><a href="tel(012)-320-4453">(012)-320-4453</a></li>
+                            <li><i class="fa-solid fa-envelope"></i><a href="mailto:nyambichic1@gmail.com">nyambichic1@gmail.com</a></li>
+                            <li><i class="fa-solid fa-book"></i><a href="#">Contact Us Form</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col s12 m3" id="footerStyle4">
+                        <h3>Follow Us</h3>
+                        <ul>
+
+                            <li><i class="fa-brands fa-facebook"></i><a href="https://web.facebook.com/events/search/?q=Shopping&sde=AbrQ9KopLfqYT7heXVVCxznkZYxRr9hU1JA4cdLbJhjgs56yyeHW3e833A9dGP1WlEHOyagjWyFL9Y79gw-Ko1iVuJCILVkpVsHkmSbBFb3SEA&filters=eyJmaWx0ZXJfZXZlbnRzX2NhdGVnb3J5OjAiOiJ7XCJuYW1lXCI6XCJmaWx0ZXJfZXZlbnRzX2NhdGVnb3J5XCIsXCJhcmdzXCI6XCI3NjM3NTM3MjA2NDMzNTZcIn0ifQ%3D%3D">Facebook</a></li>
+                            <li><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/p/CqWHZbit0GM/">Instagram</a></li>
+                            <li><i class="fa-brands fa-twitter"></i><a href="https://twitter.com/Twitter">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="pfot "> Privacy Policy | Cookie Policy | Vulnerability Policy | Terms and Conditions  </p>
+                <p class="pfot2 ">  @2023 copyright JR </p>
+
+            </div>
+
+        </footer>
+
+
+    </main>
+
+
+
+
+    <script>
+        //Javacript for the scroll indicator bar
+        window.addEventListener("scroll", () => {
+            const indicatorBar = document.querySelector(".scroll-indicator-bar");
+
+            const pageScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollValue = (pageScroll / height) * 100;
+
+            indicatorBar.style.width = scrollValue + "%";
+        });
+    </script>
+
+    <script>
+
+        //Responsive navigation menu toggle
+        const menuBtn = document.querySelector(".nav-menu-btn");
+        const closeBtn = document.querySelector(".nav-close-btn");
+        const navigation = document.querySelector(".navigation");
+
+        menuBtn.addEventListener("click", () => {
+            navigation.classList.add("active");
+        });
+
+        closeBtn.addEventListener("click", () => {
+            navigation.classList.remove("active");
+        });
+    </script>
+
+    <!-- Add some JavaScript code to change the profile picture -->
+    <script>
+        function changePicture() {
+            // Get the image element
+            var img = document.querySelector("img");
+            // Prompt the user to enter a new image URL
+            var url = prompt("Enter a new image URL:");
+            // Set the image source to the new URL
+            img.src = url;
+        }
+    </script>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+
+            // Toggle the "dark-theme" class on the body element
+            body.classList.toggle("dark-theme");
+
+            // Save the current theme preference in local storage
+            const currentTheme = body.classList.contains("dark-theme") ? "dark" : "light";
+            localStorage.setItem("theme", currentTheme);
+        }
+
+        // Check the user's preferred theme from local storage
+        const preferredTheme = localStorage.getItem("theme");
+        if (preferredTheme === "dark") {
+            // If the user prefers dark theme, set it initially
+            document.body.classList.add("dark-theme");
+        }
+
+
+    </script>
+
+
+        <script>
+
+            const checkoutButton = document.querySelector(".checkout-button");
+            checkoutButton.addEventListener("click", function () {
+                    const cartItems = document.querySelectorAll(".item2");
+            const cartItemsArray = Array.from(cartItems).map(function (item) {
+                        return {
+                image: item.querySelector("img").src,
+            name: item.querySelector(".itemN").textContent,
+            price: item.querySelector(".itemP").textContent
+                        };
+                    });
+            localStorage.setItem("cartItems", JSON.stringify(cartItemsArray));
+            // Redirect the user to the checkout page
+            window.location.href = "CKout.html";
+                });
+    </script>
+
+    <script>
+
+
+
+        const addToCartElements = document.getElementsByClassName("carti");
+
+        Array.from(addToCartElements).forEach(function (element) {
+            element.addEventListener('click', function (e) {
+                e.preventDefault();
+                const productElement = element.closest('.product');
+                const image = productElement.querySelector('.image img').getAttribute('src');
+                const price = productElement.querySelector('.priceValue').textContent;
+                const name = productElement.querySelector('.productName').textContent;
+
+                add(image, price, name);
+                calculateTotalPrice(price);
+            });
+            });
+
+
+
+        function add(image, price, name) {
+                const cartItemHTML = `
+        <div class="item2">
+            <img src="${image}" alt="">
+                <span class="itemN">${name}</span>
+                <span class="itemP">${price}</span>
+                <i class="fa fa-trash delete-icon" onclick="removeItem(this, ${price})"></i>
+        </div>
+
+        `;
+        document.querySelector(".cart-items").innerHTML += cartItemHTML;
+        displayEmptyCartMessage(); // Call the function to display the empty cart message
+            }
+
+        function removeItem(element, itemPrice) {
+                const itemElement = element.parentNode;
+        itemElement.remove();
+
+        calculateTotalPrice(-itemPrice); // Subtract the item price from the total
+        displayEmptyCartMessage(); // Call the function to display the empty cart message
+            }
+
+        let totalPrice = 0;
+
+        function calculateTotalPrice(itemPrice) {
+            totalPrice += parseFloat(itemPrice);
+        document.getElementById('cart-total').innerText = totalPrice;
+            }
+
+        function displayEmptyCartMessage() {
+                const cartItems = document.getElementsByClassName("item2");
+        const emptyCartMessage = document.getElementById("empty-cart-message");
+
+        if (cartItems.length === 0) {
+            emptyCartMessage.style.display = "block";
+                } else {
+            emptyCartMessage.style.display = "none";
+                }
+            }
+
+    </script>
+
+
+    <script>
+
+
+        let loadMoreBtn = document.querySelector('#load-more');
+        let currentItem = 4;
+
+            loadMoreBtn.onclick = () => {
+            let boxes = [...document.querySelectorAll('.container-products .products .product')];
+        for (var i = currentItem; i < currentItem + 4; i++) {
+            boxes[i].style.display = 'flex';
+                }
+        currentItem += 4;
+
+                if (currentItem >= boxes.length) {
+            loadMoreBtn.style.display = 'none';
+                }
+            }
+
+
+    </script>
+
+</body>
+</html >
+
+
+
+
+
